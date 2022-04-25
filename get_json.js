@@ -8,7 +8,7 @@ Vue.createApp({
     methods: {
       getHeaderData() {
         axios
-          .get('https://raw.githubusercontent.com/hanisftryaa/coba/main/contents/header.json')
+          .get('https://raw.githubusercontent.com/hanisftryaa/cobaja/main/contents/header.json')
           .then((res) => {
             console.log(res.data);
             this.header = res.data;
@@ -19,7 +19,7 @@ Vue.createApp({
       },
       getArticles() {
         axios
-          .get('https://raw.githubusercontent.com/hanisftryaa/coba/main/contents/articles.json')
+          .get('https://raw.githubusercontent.com/hanisftryaa/cobaja/main/contents/articles.json')
           .then((res) => {
             console.log(res.data);
             this.articles = res.data;
